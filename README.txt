@@ -27,7 +27,7 @@ This directory contains MATLAB scripts for modeling gastric motility and emptyin
 
 8. compartment_retrograde_ini.m
    - Computes initial retrograde (backward) flow in compartments.
-   - Models retropulsion effects caused by peristaltic waves.
+   - Models retropulsion effects caused by peristaltic waves and closed pyloric sphincter.
 
 9. compartment_retrograde_pred.m
    - Predicts retrograde flow velocity in compartments.
