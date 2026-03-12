@@ -31,4 +31,8 @@ y0=[-70	-70	8.84228090634526e-05	0.954073913638169	4.43676153295407e-06	0.937997
 
 t_span = [0 400];  % Time span for ODE solver
 
-toc(tStart)
+% `ode15s` is a stiff solver suitable for this type of system.
+
+[time, y] = ode15s(@Compartment, t_span, y0, [], stim_val, stim_val_PS, mu, rho, t_end, t_end_PS);
+
+tEnd = toc(tStart)
